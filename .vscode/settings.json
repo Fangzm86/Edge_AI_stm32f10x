@@ -1,0 +1,65 @@
+{
+    // File associations
+    "files.associations": {
+        "*.h": "c",
+        "*.c": "c"
+    },
+    
+    // Editor settings
+    "editor.formatOnSave": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    
+    // C/C++ extension settings
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "C_Cpp.configurationWarnings": "enabled",
+    "C_Cpp.intelliSenseCachePath": "${workspaceFolder}/.vscode",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/Core/Inc",
+        "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc",
+        "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy",
+        "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+        "${workspaceFolder}/Drivers/CMSIS/Include"
+    ],
+    "C_Cpp.default.defines": [
+        "USE_HAL_DRIVER",
+        "STM32F103xE",
+        "DEBUG"
+    ],
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/compile_commands.json",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.intelliSenseMode": "gcc-arm",
+    "C_Cpp.intelliSenseMemoryLimit": 8192,
+    "C_Cpp.workspaceParsingPriority": "highest",
+    "C_Cpp.exclusionPolicy": "checkFolders",
+    
+    // CMake settings
+    "cmake.configureOnOpen": true,
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.generator": "Ninja",
+    
+    // Cortex-Debug extension settings
+    "cortex-debug.armToolchainPath": "",
+    "cortex-debug.openocdPath": "",
+    
+    // Terminal settings
+    "terminal.integrated.env.windows": {
+        "PATH": "${env:PATH}"
+    },
+    
+    // Exclude directories from file explorer
+    "files.exclude": {
+        "**/.git": true,
+        "**/build": false,
+        "**/CMakeFiles": true
+    },
+    
+    // Exclude directories from search
+    "search.exclude": {
+        "**/build": true,
+        "**/CMakeFiles": true
+    }
+}

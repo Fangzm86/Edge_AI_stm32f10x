@@ -1,0 +1,53 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/f103_demo_vscode.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "device": "STM32F103",
+            "configFiles": [
+                "interface/cmsis-dap.cfg",
+                "target/stm32f1x.cfg"
+            ],
+            "svdFile": "${workspaceFolder}/STM32F103xx.svd",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "Build",
+            // Enable the following for semihosting
+            // "swoConfig": {},
+            // "rtos": "FreeRTOS",
+            "postLaunchCommands": [
+                "monitor reset halt",
+                "monitor arm semihosting enable"
+            ]
+        },
+        {
+            "name": "Flash & Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/f103_demo_vscode.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "device": "STM32F103",
+            "configFiles": [
+                "interface/cmsis-dap.cfg",
+                "target/stm32f1x.cfg"
+            ],
+            "svdFile": "${workspaceFolder}/STM32F103xx.svd",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "Build",
+            "preRestartCommands": [
+                "load",
+                "enable breakpoint",
+                "monitor reset"
+            ],
+            "postLaunchCommands": [
+                "monitor reset halt",
+                "monitor arm semihosting enable"
+            ]
+        }
+    ]
+}
