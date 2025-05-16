@@ -126,7 +126,7 @@ build f103_demo_vscode.elf: C_EXECUTABLE_LINKER__f103_demo_vscode_Debug cmake/st
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "E:\Data Files\Projects\Embedded Systems\f103_demo_vscode" && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake-gui.exe -S"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode" -B"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode""
+  COMMAND = cmd.exe /C "cd /D "E:\Data Files\Projects\Embedded Systems\f103_demo_vscode" && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake-gui.exe -S"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode" -B"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode""
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -138,7 +138,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "E:\Data Files\Projects\Embedded Systems\f103_demo_vscode" && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake.exe --regenerate-during-build -S"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode" -B"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode""
+  COMMAND = cmd.exe /C "cd /D "E:\Data Files\Projects\Embedded Systems\f103_demo_vscode" && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake.exe --regenerate-during-build -S"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode" -B"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -267,7 +267,7 @@ build cmake/stm32cubemx/STM32_Drivers: phony cmake/stm32cubemx/CMakeFiles/STM32_
 # Utility command for edit_cache
 
 build cmake/stm32cubemx/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "E:\Data Files\Projects\Embedded Systems\f103_demo_vscode\cmake\stm32cubemx" && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake-gui.exe -S"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode" -B"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode""
+  COMMAND = cmd.exe /C "cd /D "E:\Data Files\Projects\Embedded Systems\f103_demo_vscode\cmake\stm32cubemx" && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake-gui.exe -S"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode" -B"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode""
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -279,7 +279,7 @@ build cmake/stm32cubemx/edit_cache: phony cmake/stm32cubemx/CMakeFiles/edit_cach
 # Utility command for rebuild_cache
 
 build cmake/stm32cubemx/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "E:\Data Files\Projects\Embedded Systems\f103_demo_vscode\cmake\stm32cubemx" && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake.exe --regenerate-during-build -S"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode" -B"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode""
+  COMMAND = cmd.exe /C "cd /D "E:\Data Files\Projects\Embedded Systems\f103_demo_vscode\cmake\stm32cubemx" && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake.exe --regenerate-during-build -S"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode" -B"E:\Data Files\Projects\Embedded Systems\f103_demo_vscode""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1

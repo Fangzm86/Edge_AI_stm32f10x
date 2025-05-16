@@ -96,7 +96,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
     HAL_GPIO_TogglePin(led_GPIO_Port,led_Pin); // Toggle the state of pin GPIOB_PIN_0
-    HAL_Delay(1000); // Delay for 1 second
+    HAL_Delay(2000); // Delay for 1 second
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
