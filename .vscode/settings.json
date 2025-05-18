@@ -2,7 +2,8 @@
     // File associations
     "files.associations": {
         "*.h": "c",
-        "*.c": "c"
+        "*.c": "c",
+        "type_traits": "c"
     },
     
     // Editor settings
@@ -61,5 +62,9 @@
     "search.exclude": {
         "**/build": true,
         "**/CMakeFiles": true
-    }
+    },
+    // Python extension settings
+    
+    "python.terminal.activateEnvironment": true,
+    "python.pythonPath": "C:/.venv/EdgeAI/Scripts/python.exe",
 }

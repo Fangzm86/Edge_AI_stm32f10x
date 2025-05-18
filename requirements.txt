@@ -1,0 +1,47 @@
+# Deep Learning Framework
+tensorflow>=2.13.0  # Updated for better LLM compatibility
+tensorflow-hub>=0.14.0  # Pre-trained models and transfer learning
+tensorflow-model-optimization>=0.7.5  # Model optimization toolkit
+keras>=2.13.0  # High-level neural network API
+
+# LLM and LangChain
+# langchain>=0.0.267  # LangChain framework
+# langchain-community>=0.0.1  # Community extensions
+# langchain-core>=0.0.1  # Core components
+# transformers>=4.30.0  # Hugging Face Transformers
+# sentence-transformers>=2.2.2  # Sentence embeddings
+# tokenizers>=0.13.3  # Fast tokenizers
+# accelerate>=0.20.3  # Hugging Face Accelerate for optimization
+# bitsandbytes>=0.41.0  # Quantization for LLMs
+# peft>=0.4.0  # Parameter-Efficient Fine-Tuning
+
+# Vector Databases and Storage
+faiss-cpu>=1.7.4  # Vector similarity search (CPU version)
+chromadb>=0.4.6  # Chroma vector database
+pymupdf>=1.22.5  # PDF processing
+unstructured>=0.8.1  # Document processing
+pypdf>=3.15.1  # PDF processing
+
+# Data Processing and Scientific Computing
+numpy>=1.22.0  # Numerical computing
+pandas>=1.5.3  # Data manipulation and analysis
+scipy>=1.10.1  # Scientific computing and signal processing
+scikit-learn>=1.2.2  # Machine learning utilities
+
+# Development and Visualization
+matplotlib>=3.7.1  # Plotting library
+seaborn>=0.12.2  # Statistical data visualization
+jupyter>=1.0.0  # Jupyter notebooks
+ipython>=8.12.0  # Interactive Python shell
+
+# Utilities
+tqdm>=4.65.0  # Progress bars
+python-dotenv>=1.0.0  # Environment variable management
+pyserial>=3.5  # Serial communication (if needed for data acquisition)
+requests>=2.31.0  # HTTP requests
+pydantic>=2.0.0  # Data validation
+typing-extensions>=4.5.0  # Enhanced typing support
+
+# Testing and Optimization
+pytest>=7.3.1  # Testing framework
+numba>=0.56.4  # JIT compiler for performance optimization

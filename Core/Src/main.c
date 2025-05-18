@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -86,8 +87,12 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  // Send welcome message
+  HAL_UART_Transmit(&huart1, (uint8_t*)"Matrix Determinant Calculator\r\n", 31, HAL_MAX_DELAY);
+  HAL_UART_Transmit(&huart1, (uint8_t*)"Format: size,a11,a12,...,ann\r\n", 30, HAL_MAX_DELAY);
+  HAL_UART_Transmit(&huart1, (uint8_t*)"Example: 3,1,2,3,4,5,6,7,8,9\r\n", 31, HAL_MAX_DELAY);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -95,9 +100,15 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    HAL_GPIO_TogglePin(led_GPIO_Port,led_Pin); // Toggle the state of pin GPIOB_PIN_0
-    HAL_Delay(2000); // Delay for 1 second
+
     /* USER CODE BEGIN 3 */
+    // Process any received UART data
+    UART_ProcessData();
+    
+    // Toggle LED to indicate system is running
+    HAL_GPIO_TogglePin(led_GPIO_Port, led_Pin);
+    // HAL_UART_Transmit(&huart1, (uint8_t*)"STM32 Ready\r\n", 12, HAL_MAX_DELAY);
+    HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }

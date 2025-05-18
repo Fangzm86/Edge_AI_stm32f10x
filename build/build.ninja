@@ -53,7 +53,7 @@ build CMakeFiles/f103_demo_vscode.dir/Core/Src/main.c.obj: C_COMPILER__f103_demo
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\f103_demo_vscode.dir\Core\Src\main.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = CMakeFiles\f103_demo_vscode.dir
   OBJECT_FILE_DIR = CMakeFiles\f103_demo_vscode.dir\Core\Src
 
@@ -61,7 +61,15 @@ build CMakeFiles/f103_demo_vscode.dir/Core/Src/gpio.c.obj: C_COMPILER__f103_demo
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\f103_demo_vscode.dir\Core\Src\gpio.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  OBJECT_DIR = CMakeFiles\f103_demo_vscode.dir
+  OBJECT_FILE_DIR = CMakeFiles\f103_demo_vscode.dir\Core\Src
+
+build CMakeFiles/f103_demo_vscode.dir/Core/Src/usart.c.obj: C_COMPILER__f103_demo_vscode_unscanned_Debug E$:/Data$ Files/Projects/Embedded$ Systems/f103_demo_vscode/Core/Src/usart.c || cmake_object_order_depends_target_f103_demo_vscode
+  DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\f103_demo_vscode.dir\Core\Src\usart.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = CMakeFiles\f103_demo_vscode.dir
   OBJECT_FILE_DIR = CMakeFiles\f103_demo_vscode.dir\Core\Src
 
@@ -69,7 +77,7 @@ build CMakeFiles/f103_demo_vscode.dir/Core/Src/stm32f1xx_it.c.obj: C_COMPILER__f
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\f103_demo_vscode.dir\Core\Src\stm32f1xx_it.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = CMakeFiles\f103_demo_vscode.dir
   OBJECT_FILE_DIR = CMakeFiles\f103_demo_vscode.dir\Core\Src
 
@@ -77,7 +85,7 @@ build CMakeFiles/f103_demo_vscode.dir/Core/Src/stm32f1xx_hal_msp.c.obj: C_COMPIL
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\f103_demo_vscode.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = CMakeFiles\f103_demo_vscode.dir
   OBJECT_FILE_DIR = CMakeFiles\f103_demo_vscode.dir\Core\Src
 
@@ -85,7 +93,7 @@ build CMakeFiles/f103_demo_vscode.dir/Core/Src/sysmem.c.obj: C_COMPILER__f103_de
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\f103_demo_vscode.dir\Core\Src\sysmem.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = CMakeFiles\f103_demo_vscode.dir
   OBJECT_FILE_DIR = CMakeFiles\f103_demo_vscode.dir\Core\Src
 
@@ -93,7 +101,7 @@ build CMakeFiles/f103_demo_vscode.dir/Core/Src/syscalls.c.obj: C_COMPILER__f103_
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\f103_demo_vscode.dir\Core\Src\syscalls.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = CMakeFiles\f103_demo_vscode.dir
   OBJECT_FILE_DIR = CMakeFiles\f103_demo_vscode.dir\Core\Src
 
@@ -101,7 +109,7 @@ build CMakeFiles/f103_demo_vscode.dir/startup_stm32f103xe.s.obj: ASM_COMPILER__f
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\f103_demo_vscode.dir\startup_stm32f103xe.s.obj.d
   FLAGS = -mcpu=cortex-m3  -x assembler-with-cpp -MMD -MP -g
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = CMakeFiles\f103_demo_vscode.dir
   OBJECT_FILE_DIR = CMakeFiles\f103_demo_vscode.dir
 
@@ -113,7 +121,7 @@ build CMakeFiles/f103_demo_vscode.dir/startup_stm32f103xe.s.obj: ASM_COMPILER__f
 #############################################
 # Link the executable f103_demo_vscode.elf
 
-build f103_demo_vscode.elf: C_EXECUTABLE_LINKER__f103_demo_vscode_Debug cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj CMakeFiles/f103_demo_vscode.dir/Core/Src/main.c.obj CMakeFiles/f103_demo_vscode.dir/Core/Src/gpio.c.obj CMakeFiles/f103_demo_vscode.dir/Core/Src/stm32f1xx_it.c.obj CMakeFiles/f103_demo_vscode.dir/Core/Src/stm32f1xx_hal_msp.c.obj CMakeFiles/f103_demo_vscode.dir/Core/Src/sysmem.c.obj CMakeFiles/f103_demo_vscode.dir/Core/Src/syscalls.c.obj CMakeFiles/f103_demo_vscode.dir/startup_stm32f103xe.s.obj || cmake/stm32cubemx/STM32_Drivers
+build f103_demo_vscode.elf: C_EXECUTABLE_LINKER__f103_demo_vscode_Debug cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj CMakeFiles/f103_demo_vscode.dir/Core/Src/main.c.obj CMakeFiles/f103_demo_vscode.dir/Core/Src/gpio.c.obj CMakeFiles/f103_demo_vscode.dir/Core/Src/usart.c.obj CMakeFiles/f103_demo_vscode.dir/Core/Src/stm32f1xx_it.c.obj CMakeFiles/f103_demo_vscode.dir/Core/Src/stm32f1xx_hal_msp.c.obj CMakeFiles/f103_demo_vscode.dir/Core/Src/sysmem.c.obj CMakeFiles/f103_demo_vscode.dir/Core/Src/syscalls.c.obj CMakeFiles/f103_demo_vscode.dir/startup_stm32f103xe.s.obj || cmake/stm32cubemx/STM32_Drivers
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3
   OBJECT_DIR = CMakeFiles\f103_demo_vscode.dir
   POST_BUILD = cd .
@@ -163,7 +171,7 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Core\Src\system_stm32f1xx.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Core\Src
 
@@ -171,7 +179,15 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
+  OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
+
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug E$:/Data$ Files/Projects/Embedded$ Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c || cmake_object_order_depends_target_STM32_Drivers
+  DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
+  DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
 
@@ -179,7 +195,7 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
 
@@ -187,7 +203,7 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
 
@@ -195,7 +211,7 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
 
@@ -203,7 +219,7 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
 
@@ -211,7 +227,7 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
 
@@ -219,7 +235,7 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
 
@@ -227,7 +243,7 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
 
@@ -235,7 +251,7 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
 
@@ -243,7 +259,7 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
 
@@ -251,7 +267,7 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
-  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
+  INCLUDES = -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Core/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/Drivers/CMSIS/Include"
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32F1xx_HAL_Driver\Src
 
@@ -260,7 +276,7 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
 #############################################
 # Object library STM32_Drivers
 
-build cmake/stm32cubemx/STM32_Drivers: phony cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
+build cmake/stm32cubemx/STM32_Drivers: phony cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
 
 
 #############################################
