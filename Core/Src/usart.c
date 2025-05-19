@@ -63,11 +63,25 @@ void MX_USART1_UART_Init(void)
   }
   /* USER CODE BEGIN USART1_Init 2 */
   // Start receiving data in interrupt mode
-  HAL_UART_Receive_IT(&huart1, &rxBuffer[rxIndex], 1);
+  HAL_StatusTypeDef status = HAL_UART_Receive_IT(&huart1, &rxBuffer[rxIndex], 1);
+  if (status != HAL_OK)
+  {
+    // error handling
+    Error_Handler();
+  }
   /* USER CODE END USART1_Init 2 */
 
 }
 
+/**
+  * @brief  Initializes the USART MSP (MCU Specific Package).
+  * @param  uartHandle: Pointer to a UART_HandleTypeDef structure that contains
+  *                     the configuration information for the specified USART module.
+  * @note   This function configures the GPIO pins and clocks for USART1.
+  *         PA9 is configured as alternate function push-pull (USART1_TX).
+  *         PA10 is configured as input (USART1_RX).
+  * @retval None
+  */
 void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
 {
 
@@ -96,12 +110,21 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* USER CODE BEGIN USART1_MspInit 1 */
-
+    /* USART1 interrupt Init */
+    HAL_NVIC_SetPriority(USART1_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(USART1_IRQn);
   /* USER CODE END USART1_MspInit 1 */
   }
 }
 
-void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
+/**
+ * @brief  De-initializes the USART MSP.
+ * @param  uartHandle: pointer to a UART_HandleTypeDef structure that contains
+ *         the configuration information for the specified USART module.
+ * @note   This function disables the USART1 peripheral clock and GPIO pins.
+ *         (PA9 for TX, PA10 for RX).
+ */
+void HAL_UART_MspDeInit(UART_HandleTypeDef *uartHandle)
 {
 
   if(uartHandle->Instance==USART1)
@@ -210,11 +233,11 @@ void UART_ProcessData(void)
         }
         
         // Calculate determinant
-        float det = CalculateDeterminant(&receivedMatrix);
-        
+        int det = CalculateDeterminant(&receivedMatrix);
+
         // Send result back
         char resultMsg[50];
-        sprintf(resultMsg, "Determinant: %.6f\r\n", det);
+        sprintf(resultMsg, "Determinant: %d\r\n", det);
         HAL_UART_Transmit(&huart1, (uint8_t*)resultMsg, strlen(resultMsg), HAL_MAX_DELAY);
       }
       else
