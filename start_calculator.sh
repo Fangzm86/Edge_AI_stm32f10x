@@ -37,10 +37,11 @@ fi
 
 # Build and flash STM32 program
 print_msg "Building and flashing STM32 program..." "${BLUE}"
-./run.sh || error_exit "Failed to build and flash STM32 program"
+./embedded/run.sh || error_exit "Failed to build and flash STM32 program"
 
 # Find serial port
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    echo "Linux detected"
     # Linux: try to find USB-Serial device
     PORT=$(ls /dev/ttyUSB* 2>/dev/null | head -n1)
     if [ -z "$PORT" ]; then
@@ -53,8 +54,13 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
         PORT=$(ls /dev/tty.usbmodem* 2>/dev/null | head -n1)
     fi
 else
-    # Windows: assume COM3 (user should modify this)
-    PORT="COM4"
+    # Windows: assume COM4 (user should modify this)
+    echo "Windows detected"
+    PORT=$(yq eval '.hardware.serial_port' ./config.yaml)
+    echo "PORT: $PORT"
+    if [ -z "$PORT" ]; then
+        PORT="COM4"
+    fi
 fi
 
 if [ -z "$PORT" ]; then
@@ -65,4 +71,4 @@ print_msg "Using serial port: $PORT" "${BLUE}"
 
 # Start Python script
 print_msg "Starting Matrix Calculator..." "${GREEN}"
-python matrix_calculator.py -p "$PORT" -s 3 || error_exit "Failed to run Python script"
+python ./python/matrix_calculator.py -p "$PORT" -s 3 || error_exit "Failed to run Python script"

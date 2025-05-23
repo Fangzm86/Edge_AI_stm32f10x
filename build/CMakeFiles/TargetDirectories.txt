@@ -1,6 +1,0 @@
-E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/build/CMakeFiles/f103_demo_vscode.dir
-E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/build/CMakeFiles/edit_cache.dir
-E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/build/CMakeFiles/rebuild_cache.dir
-E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
-E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/build/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
-E:/Data Files/Projects/Embedded Systems/f103_demo_vscode/build/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,103 @@
+# Time Series Data Processing Configuration
+
+# Data parameters
+datasets:
+  # Feature columns to use (if empty, all non-label columns will be used)
+  MaFaulDa:
+  # Path to the dataset file
+    path: "./data/mafaulda19.csv"
+    # feature columns to use (if empty, all non-label columns will be used)
+    features: ['0', '1', '2', '3', '4', '5', '6']
+    # Label column name
+    label_column: "class"
+  # add more datasets here if needed
+
+# Active dataset to use for training and evaluation
+active_dataset: "MaFaulDa"
+
+data_processing:
+  # Sample data generation (for testing)
+  sample_generation:
+    num_samples: 1000
+    random_seed: 42
+# Window parameters
+  window:
+    # Window length (number of time steps in each window)
+    length: 128
+    
+    # Window creation method: 'overlap' or 'step_size'
+    method: "step_size"
+    
+    # Overlap between windows (0.0 to 1.0, used if method is 'overlap')
+    overlap: 0.5
+    
+    # Step size between windows (used if method is 'step_size')
+    step_size: 1
+  # Normalization parameters
+  normalization:
+    # Whether to use MinMaxScaler for initial normalization
+    use_minmax_scaler: true
+    
+    # Additional per-window normalization method: 'none', 'minmax', 'zscore', or 'robust'
+    window_normalization: "zscore"
+    
+    # Feature range for MinMaxScaler (min, max)
+    feature_range: [0, 1]
+
+# TensorFlow model parameters
+model:
+  # Model architecture type: 'lstm', 'gru', 'cnn', 'transformer'
+  architecture: "lstm"
+  
+  # Layer sizes (neurons per layer)
+  layer_sizes: [64, 32]
+  
+  # Dropout rate
+  dropout_rate: 0.2
+  
+  # Activation function
+  activation: "relu"
+  
+  # Whether to use batch normalization
+  use_batch_norm: true
+
+  # Training parameters
+  training:
+    # Number of epochs
+    epochs: 100
+    
+    # Batch size
+    batch_size: 32
+    
+    # Learning rate
+    learning_rate: 0.001
+    
+    # Optimizer: 'adam', 'sgd', 'rmsprop'
+    optimizer: "adam"
+    
+    # Early stopping patience
+    early_stopping_patience: 10
+    
+    # Validation split
+    validation_split: 0.2
+    
+    # Whether to use class weights for imbalanced data
+    use_class_weights: true
+
+  # Evaluation parameters
+  evaluation:
+    # Metrics to use: 'accuracy', 'precision', 'recall', 'f1', 'auc'
+    metrics:
+      - "accuracy"
+      - "f1"
+
+    # Whether to use cross-validation
+    use_cross_validation: false
+    
+    # Number of folds for cross-validation
+    cv_folds: 5
+
+hardware:
+  # serial port for stm32
+  serial_port: "COM4"
+  baud_rate: 115200
