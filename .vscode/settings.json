@@ -67,4 +67,10 @@
     
     "python.terminal.activateEnvironment": true,
     "python.pythonPath": "C:/.venv/EdgeAI/Scripts/python.exe",
+    "python.analysis.extraPaths": [
+    "${workspaceFolder}"
+    ],
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}"
+    ]
 }

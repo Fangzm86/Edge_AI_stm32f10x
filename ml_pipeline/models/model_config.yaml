@@ -1,0 +1,202 @@
+# Model Configuration
+
+# Model architecture settings
+model:
+  architecture: lstm  # 'lstm', 'cnn', 'hybrid', 'tcn', 'transformer', 'resnet'
+  input_shape: null  # Automatically determined from data
+  num_classes: null  # Automatically determined from data
+  layer_sizes: [64, 32]  # Hidden layer sizes
+  dropout_rate: 0.3
+  recurrent_dropout_rate: 0.0  # For LSTM/GRU
+  activation: tanh  # 'relu', 'tanh', 'sigmoid', 'elu', 'selu'
+  output_activation: softmax  # 'softmax', 'sigmoid'
+  use_batch_norm: true
+  use_layer_norm: false
+  kernel_regularizer:
+    type: l2  # 'l1', 'l2', 'l1_l2'
+    factor: 0.001
+  activity_regularizer:
+    type: null  # 'l1', 'l2', 'l1_l2'
+    factor: 0.001
+  bidirectional: false  # For LSTM/GRU
+  return_sequences: false  # For LSTM/GRU
+  attention: false  # Use attention mechanism
+  
+  # CNN-specific settings
+  cnn:
+    filters: [64, 128, 256]
+    kernel_size: 3
+    pool_size: 2
+    pool_type: max  # 'max', 'avg'
+    use_separable_conv: false
+    dilation_rate: 1
+  
+  # TCN-specific settings
+  tcn:
+    nb_filters: 64
+    kernel_size: 3
+    nb_stacks: 1
+    dilations: [1, 2, 4, 8, 16]
+    padding: causal  # 'causal', 'same'
+    use_skip_connections: true
+    dropout_rate: 0.3
+  
+  # Transformer-specific settings
+  transformer:
+    num_heads: 4
+    ff_dim: 128
+    num_transformer_blocks: 2
+    mlp_units: [64, 32]
+    mlp_dropout: 0.3
+    attention_dropout: 0.2
+  
+  # ResNet-specific settings
+  resnet:
+    filters: [64, 128, 256]
+    kernel_size: 3
+    conv_shortcut: true
+    use_bias: true
+    blocks_per_stack: 2
+
+# Training settings
+training:
+  batch_size: 32
+  epochs: 100
+  learning_rate: 0.001
+  optimizer: adam  # 'adam', 'sgd', 'rmsprop', 'adagrad', 'adadelta', 'adamax', 'nadam'
+  loss: categorical_crossentropy  # 'categorical_crossentropy', 'binary_crossentropy', 'mse'
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+  early_stopping_patience: 10
+  reduce_lr_patience: 5
+  reduce_lr_factor: 0.5
+  min_lr: 0.00001
+  use_class_weights: true
+  shuffle: true
+  validation_split: 0.2
+  random_seed: 42
+  
+  # Learning rate scheduler
+  lr_scheduler:
+    type: reduce_on_plateau  # 'reduce_on_plateau', 'cosine_decay', 'exponential_decay', 'step_decay', 'custom'
+    monitor: val_loss
+    factor: 0.5
+    patience: 5
+    min_lr: 0.00001
+    cooldown: 0
+    verbose: 1
+  
+  # Optimizer settings
+  optimizer_params:
+    adam:
+      beta_1: 0.9
+      beta_2: 0.999
+      epsilon: 1.0e-07
+      amsgrad: false
+    sgd:
+      momentum: 0.9
+      nesterov: true
+    rmsprop:
+      rho: 0.9
+      epsilon: 1.0e-07
+      momentum: 0.0
+    adagrad:
+      epsilon: 1.0e-07
+    adadelta:
+      rho: 0.95
+      epsilon: 1.0e-07
+    adamax:
+      beta_1: 0.9
+      beta_2: 0.999
+      epsilon: 1.0e-07
+    nadam:
+      beta_1: 0.9
+      beta_2: 0.999
+      epsilon: 1.0e-07
+  
+  # Data augmentation during training
+  augmentation:
+    enabled: false
+    jitter_sigma: 0.05
+    scaling_sigma: 0.1
+    rotation_sigma: 0.1
+    permutation_segments: 0
+    time_warping: false
+  
+  # Mixed precision training
+  mixed_precision:
+    enabled: false
+    dtype: mixed_float16  # 'mixed_float16', 'mixed_bfloat16'
+  
+  # Gradient clipping
+  gradient_clipping:
+    enabled: false
+    value: 1.0
+  
+  # Checkpointing
+  checkpointing:
+    enabled: true
+    monitor: val_loss
+    save_best_only: true
+    save_weights_only: false
+    mode: min
+    verbose: 1
+    period: 1
+    prefix: model_checkpoint
+
+# Evaluation settings
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+    - confusion_matrix
+    - roc_curve
+    - precision_recall_curve
+  class_metrics: true  # Calculate metrics for each class
+  save_predictions: true
+  save_confusion_matrix: true
+  save_roc_curve: true
+  save_precision_recall_curve: true
+  save_feature_importance: true
+  save_model_summary: true
+  save_training_history: true
+  save_evaluation_report: true
+  visualization:
+    enabled: true
+    plots:
+      - training_history
+      - confusion_matrix
+      - roc_curve
+      - precision_recall_curve
+      - feature_importance
+    dpi: 300
+    format: png
+
+# Model conversion settings
+conversion:
+  formats:
+    - tflite
+    - c_array
+  quantization: float16  # 'none', 'float16', 'int8', 'full_int8'
+  optimization: true
+  target_devices:
+    - stm32f4
+    - stm32f7
+    - stm32h7
+  variable_name: g_model
+  analyze: true
+  representative_data: true
+  metadata:
+    include:
+      - input_shape
+      - output_shape
+      - class_names
+      - feature_names
+      - preprocessing_params
+      - quantization_params
+      - performance_metrics

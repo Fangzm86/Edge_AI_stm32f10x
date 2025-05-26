@@ -1,0 +1,113 @@
+# Default Configuration for Data Processing
+
+# Data loading and preprocessing
+data:
+  feature_columns: null  # null means use all columns except label_column
+  label_column: "label"  # Column name for labels
+  delimiter: ","  # Delimiter for CSV files
+  na_strategy: "interpolate"  # Strategy for handling missing values: interpolate, drop, fill
+  fill_value: 0  # Value to use for filling missing values if na_strategy is 'fill'
+  interpolation_method: "linear"  # Method for interpolation: linear, polynomial, spline, nearest
+  interpolation_order: 2  # Order for polynomial/spline interpolation
+
+# Window creation
+window:
+  length: 128  # Window length in samples
+  overlap: 0.5  # Overlap between consecutive windows (0.0 to 1.0)
+  method: "overlap"  # Window creation method: overlap, step
+  step_size: 32  # Step size for step method
+  padding: "zero"  # Padding method for incomplete windows: zero, repeat, mirror, none
+  center: true  # Whether to center windows
+
+# Normalization
+normalization:
+  method: "standard"  # Normalization method for features: standard, minmax, robust, none
+  window_normalization: "none"  # Normalization method for windows: zscore, minmax, robust, none
+  feature_range: [0, 1]  # Range for minmax scaling
+  quantile_range: [0.05, 0.95]  # Quantile range for robust scaling
+  clip_values: true  # Whether to clip values after normalization
+
+# Data augmentation
+augmentation:
+  enabled: false  # Whether to enable data augmentation
+  augmentation_ratio: 0.5  # Ratio of augmented samples to original samples
+  methods:
+    jitter:
+      enabled: true
+      sigma: 0.05  # Standard deviation of Gaussian noise
+    scaling:
+      enabled: true
+      sigma: 0.1  # Standard deviation of scaling factor
+    rotation:
+      enabled: false
+      sigma: 0.1  # Standard deviation of rotation angle
+    permutation:
+      enabled: false
+      segments: 4  # Number of segments to permute
+    time_warping:
+      enabled: false
+      sigma: 0.2  # Standard deviation of time warping
+    magnitude_warping:
+      enabled: false
+      sigma: 0.2  # Standard deviation of magnitude warping
+
+# Feature extraction
+features:
+  extract: false  # Whether to extract features
+  types:  # Types of features to extract
+    - statistical
+    - temporal
+    - spectral
+  statistical:
+    mean: true
+    std: true
+    min: true
+    max: true
+    range: true
+    skewness: false
+    kurtosis: false
+    percentiles: [25, 50, 75]
+  temporal:
+    peaks: true
+    valleys: true
+    zero_crossings: true
+    mean_crossing_rate: true
+    slope: false
+    integral: false
+  spectral:
+    fft: true
+    power_spectrum: true
+    spectral_entropy: true
+    spectral_energy: true
+    dominant_frequency: true
+    frequency_bands: [[0, 5], [5, 10], [10, 20], [20, 50]]
+  wavelet:
+    wavelet: "db4"
+    level: 3
+    features:
+      - mean
+      - std
+      - energy
+
+# Output configuration
+output:
+  format: "npz"  # Output format: npz, csv
+  compress: true  # Whether to compress output
+  split:  # Data splitting
+    enabled: true
+    train_ratio: 0.7
+    val_ratio: 0.15
+    test_ratio: 0.15
+    shuffle: true
+    random_seed: 42
+  save_scaler: true  # Whether to save scaler
+  save_metadata: true  # Whether to save metadata
+
+# Pipeline configuration
+pipeline:
+  n_jobs: -1  # Number of parallel jobs (-1 means all available cores)
+  verbose: 1  # Verbosity level: 0, 1, 2
+  batch_size: 1000  # Batch size for processing
+  memory_limit: "4GB"  # Memory limit for processing
+  cache_dir: ".cache"  # Directory for caching intermediate results
+  random_seed: 42  # Random seed for reproducibility

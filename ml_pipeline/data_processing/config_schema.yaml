@@ -1,0 +1,347 @@
+# Configuration Schema for Data Processing
+
+type: object
+required:
+  - data
+  - window
+  - normalization
+  - output
+  - pipeline
+properties:
+  
+  # Data configuration
+  data:
+    type: object
+    required:
+      - na_strategy
+    properties:
+      feature_columns:
+        oneOf:
+          - type: array
+            items:
+              type: string
+          - type: null
+      label_column:
+        type: string
+      delimiter:
+        type: string
+      na_strategy:
+        type: string
+        enum:
+          - interpolate
+          - drop
+          - fill
+      fill_value:
+        type: number
+      interpolation_method:
+        type: string
+        enum:
+          - linear
+          - polynomial
+          - spline
+          - nearest
+      interpolation_order:
+        type: integer
+        minimum: 1
+        maximum: 5
+  
+  # Window configuration
+  window:
+    type: object
+    required:
+      - length
+      - overlap
+      - method
+    properties:
+      length:
+        type: integer
+        minimum: 1
+      overlap:
+        type: number
+        minimum: 0.0
+        maximum: 1.0
+      method:
+        type: string
+        enum:
+          - overlap
+          - step
+      step_size:
+        type: integer
+        minimum: 1
+      padding:
+        type: string
+        enum:
+          - zero
+          - repeat
+          - mirror
+          - none
+      center:
+        type: boolean
+  
+  # Normalization configuration
+  normalization:
+    type: object
+    required:
+      - method
+      - window_normalization
+    properties:
+      method:
+        type: string
+        enum:
+          - standard
+          - minmax
+          - robust
+          - none
+      window_normalization:
+        type: string
+        enum:
+          - zscore
+          - minmax
+          - robust
+          - none
+      feature_range:
+        type: array
+        minItems: 2
+        maxItems: 2
+        items:
+          type: number
+      quantile_range:
+        type: array
+        minItems: 2
+        maxItems: 2
+        items:
+          type: number
+      clip_values:
+        type: boolean
+  
+  # Augmentation configuration
+  augmentation:
+    type: object
+    required:
+      - enabled
+    properties:
+      enabled:
+        type: boolean
+      augmentation_ratio:
+        type: number
+        minimum: 0.0
+      methods:
+        type: object
+        properties:
+          jitter:
+            type: object
+            properties:
+              enabled:
+                type: boolean
+              sigma:
+                type: number
+                minimum: 0.0
+          scaling:
+            type: object
+            properties:
+              enabled:
+                type: boolean
+              sigma:
+                type: number
+                minimum: 0.0
+          rotation:
+            type: object
+            properties:
+              enabled:
+                type: boolean
+              sigma:
+                type: number
+                minimum: 0.0
+          permutation:
+            type: object
+            properties:
+              enabled:
+                type: boolean
+              segments:
+                type: integer
+                minimum: 2
+          time_warping:
+            type: object
+            properties:
+              enabled:
+                type: boolean
+              sigma:
+                type: number
+                minimum: 0.0
+          magnitude_warping:
+            type: object
+            properties:
+              enabled:
+                type: boolean
+              sigma:
+                type: number
+                minimum: 0.0
+  
+  # Feature extraction configuration
+  features:
+    type: object
+    required:
+      - extract
+    properties:
+      extract:
+        type: boolean
+      types:
+        type: array
+        items:
+          type: string
+          enum:
+            - statistical
+            - temporal
+            - spectral
+            - wavelet
+      statistical:
+        type: object
+        properties:
+          mean:
+            type: boolean
+          std:
+            type: boolean
+          min:
+            type: boolean
+          max:
+            type: boolean
+          range:
+            type: boolean
+          skewness:
+            type: boolean
+          kurtosis:
+            type: boolean
+          percentiles:
+            type: array
+            items:
+              type: number
+              minimum: 0
+              maximum: 100
+      temporal:
+        type: object
+        properties:
+          peaks:
+            type: boolean
+          valleys:
+            type: boolean
+          zero_crossings:
+            type: boolean
+          mean_crossing_rate:
+            type: boolean
+          slope:
+            type: boolean
+          integral:
+            type: boolean
+      spectral:
+        type: object
+        properties:
+          fft:
+            type: boolean
+          power_spectrum:
+            type: boolean
+          spectral_entropy:
+            type: boolean
+          spectral_energy:
+            type: boolean
+          dominant_frequency:
+            type: boolean
+          frequency_bands:
+            type: array
+            items:
+              type: array
+              minItems: 2
+              maxItems: 2
+              items:
+                type: number
+                minimum: 0
+      wavelet:
+        type: object
+        properties:
+          wavelet:
+            type: string
+            enum:
+              - db1
+              - db2
+              - db3
+              - db4
+              - sym2
+              - sym3
+              - sym4
+              - coif1
+              - coif2
+          level:
+            type: integer
+            minimum: 1
+          features:
+            type: array
+            items:
+              type: string
+              enum:
+                - mean
+                - std
+                - energy
+                - entropy
+  
+  # Output configuration
+  output:
+    type: object
+    required:
+      - format
+    properties:
+      format:
+        type: string
+        enum:
+          - npz
+          - csv
+      compress:
+        type: boolean
+      split:
+        type: object
+        properties:
+          enabled:
+            type: boolean
+          train_ratio:
+            type: number
+            minimum: 0.0
+            maximum: 1.0
+          val_ratio:
+            type: number
+            minimum: 0.0
+            maximum: 1.0
+          test_ratio:
+            type: number
+            minimum: 0.0
+            maximum: 1.0
+          shuffle:
+            type: boolean
+          random_seed:
+            type: integer
+      save_scaler:
+        type: boolean
+      save_metadata:
+        type: boolean
+  
+  # Pipeline configuration
+  pipeline:
+    type: object
+    required:
+      - n_jobs
+      - verbose
+    properties:
+      n_jobs:
+        type: integer
+        minimum: -1
+      verbose:
+        type: integer
+        minimum: 0
+        maximum: 2
+      batch_size:
+        type: integer
+        minimum: 1
+      memory_limit:
+        type: string
+        pattern: "^[0-9]+(GB|MB)$"
+      cache_dir:
+        type: string
+      random_seed:
+        type: integer

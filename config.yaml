@@ -64,22 +64,28 @@ model:
   # Training parameters
   training:
     # Number of epochs
-    epochs: 100
+    epochs: 50
     
     # Batch size
-    batch_size: 32
+    batch_size: 3000
     
     # Learning rate
     learning_rate: 0.001
     
     # Optimizer: 'adam', 'sgd', 'rmsprop'
     optimizer: "adam"
+
+    # Loss function: 'categorical_crossentropy', 'binary_crossentropy', 'mse'
+    loss: "categorical_crossentropy"
     
     # Early stopping patience
     early_stopping_patience: 10
     
     # Validation split
     validation_split: 0.2
+
+    # metrics to monitor during training
+    metrics: ["accuracy", "precision", "recall", "f1_score", "auc"]
     
     # Whether to use class weights for imbalanced data
     use_class_weights: true
@@ -87,9 +93,7 @@ model:
   # Evaluation parameters
   evaluation:
     # Metrics to use: 'accuracy', 'precision', 'recall', 'f1', 'auc'
-    metrics:
-      - "accuracy"
-      - "f1"
+    metrics: ["accuracy", "precision", "recall", "f1_score", "auc"]
 
     # Whether to use cross-validation
     use_cross_validation: false
